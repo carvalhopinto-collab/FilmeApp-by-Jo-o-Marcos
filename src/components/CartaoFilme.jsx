@@ -25,7 +25,8 @@ function CartaoFilme({ filme }) {
   return (
     <div className="cartao">
       <h2 className="cartao-titulo">{filme.titulo}</h2>
-      <p className="cartao-ano">Ano: {filme.ano}</p>
+      {/* <p className="cartao-ano">Ano: {filme.ano}</p> */}
+      {/* Se o ternário 'aparece' for verdadeiro [true], o parágrafo será exibido na tela, graças ao operador '&&' [and]. */}
       {aparece && (
               <p className="cartao-ano">Ano: {filme.ano}</p>
       )}
@@ -40,12 +41,12 @@ function CartaoFilme({ filme }) {
         Marcar como {assistido ? 'não assistido' : 'assistido'}
       </button>
 
-      <button className="cartao-botao"
+      <button className="cartao-botao-escondeaparece"
       onClick={() => setAparece(!aparece)}>
        {aparece ? 'Esconder' : 'Mostrar'} ano
       </button>
 
-      <button onClick={deuCurtida}>
+      <button onClick={deuCurtida} className='cartao-botao-curtida'>
         {curtidas} CURTIDAS
       </button>
 

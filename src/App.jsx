@@ -3,6 +3,7 @@ import PaginaFilmes from './components/PaginaFilmes'
 import PaginaSobre from './components/PaginaSobre'
 import PaginaContato from './components/PaginaContato'
 import filmes from './data/filmes'
+import Rodape from './components/Rodape'
 import './App.css'
 
 function App() {
@@ -49,10 +50,7 @@ function App() {
       {tela === 'filmes' && <PaginaFilmes />}
       {tela === 'sobre' && <PaginaSobre />}
       {tela === 'contato' && <PaginaContato />}
-
-      <footer className='rodape'>
-        <h1>Caceçalho</h1>
-      </footer>
+      <Rodape />
     </div>
 
   )

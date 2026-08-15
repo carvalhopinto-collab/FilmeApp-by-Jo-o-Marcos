@@ -123,6 +123,39 @@
   background-color: #3048c0;
 }
 
-.rodape {
+.cartao-botao-escondeaparece {
+  margin-top: auto; /* empurra o botão para a base do cartão */
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #AE98AA;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cartao-botao-escondeaparece:hover {
+  background-color: #4B0082;
+}
+
+.cartao-botao-curtida {
+  margin-top: auto; /* empurra o botão para a base do cartão */
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #F8C8DC;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cartao-botao-curtida:hover {
+  background-color: #E75480;
+
+/* .rodape {
   background-color: #a154d7;
+} */
+
+.rodape{
+    text-align: center;
 }

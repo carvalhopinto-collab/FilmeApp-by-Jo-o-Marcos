@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import PaginaFilmes from './components/PaginaFilmes'
 import PaginaSobre from './components/PaginaSobre'
+import PaginaContato from './components/PaginaContato'
+import filmes from './data/filmes'
 import './App.css'
 
 function App() {
@@ -11,11 +13,13 @@ function App() {
   // Ou seja: navegar aqui é só renderização condicional com useState.
   const [tela, setTela] = useState('filmes')
 
+
   return (
     <div className="app">
       <header className="cabecalho">
         <h1>Cineteca</h1>
         <p>Minha coleção de filmes</p>
+        <p>Há {filmes.length} filmes disponíveis.</p>
       </header>
 
       {/* MENU: cada botão muda a tela ativa.
@@ -33,13 +37,26 @@ function App() {
         >
           Sobre
         </button>
+                <button
+          className={tela === 'contato' ? 'menu-botao ativo' : 'menu-botao'}
+          onClick={() => setTela('contato')}
+        >
+          Contato
+        </button>
       </nav>
 
       {/* Mostra o componente conforme a tela escolhida. */}
       {tela === 'filmes' && <PaginaFilmes />}
       {tela === 'sobre' && <PaginaSobre />}
+      {tela === 'contato' && <PaginaContato />}
+
+      <footer className='rodape'>
+        <h1>Caceçalho</h1>
+      </footer>
     </div>
+
   )
+
 }
 
 export default App

@@ -59,6 +59,13 @@
   color: #333;
 }
 
+.contato {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+
 /* A lista usa Flexbox para colocar os cartões LADO A LADO.
    "flex-wrap: wrap" faz os cartões pularem de linha quando não couberem. */
 .lista {
@@ -90,6 +97,11 @@
   margin: 0 0 8px 0;
 }
 
+.cartao-nota {
+  color: #666;
+  margin: 0 0 8px 0;
+}
+
 .cartao-status {
   font-weight: bold;
   margin: 0 0 16px 0;
@@ -109,4 +121,8 @@
 
 .cartao-botao:hover {
   background-color: #3048c0;
+}
+
+.rodape {
+  background-color: #a154d7;
 }

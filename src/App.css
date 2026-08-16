@@ -151,11 +151,8 @@
 
 .cartao-botao-curtida:hover {
   background-color: #E75480;
+}
 
-/* .rodape {
-  background-color: #a154d7;
-} */
-
-.rodape{
-    text-align: center;
+.rodape {
+  text-align: center;
 }

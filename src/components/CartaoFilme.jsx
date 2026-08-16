@@ -21,12 +21,12 @@ function CartaoFilme({ filme }) {
       setCurtidas(curtidas + 1);
     }
   
-
   return (
     <div className="cartao">
       <h2 className="cartao-titulo">{filme.titulo}</h2>
       {/* <p className="cartao-ano">Ano: {filme.ano}</p> */}
-      {/* Se o ternário 'aparece' for verdadeiro [true], o parágrafo será exibido na tela, graças ao operador '&&' [and]. */}
+      {/* Se o ternário 'aparece' for verdadeiro [true], 
+      o parágrafo será exibido na tela, graças ao operador '&&' [and]. */}
       {aparece && (
               <p className="cartao-ano">Ano: {filme.ano}</p>
       )}

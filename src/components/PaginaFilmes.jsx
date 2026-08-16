@@ -12,7 +12,7 @@ function PaginaFilmes() {
         ajuda o React a saber qual item é qual.
       */}
       {filmes.map((filme) => (
-        <CartaoFilme key={filme.id} filme={filme} />
+        <CartaoFilme key={filme.id} filme={filme}/>
       ))}
     </div>
   )
